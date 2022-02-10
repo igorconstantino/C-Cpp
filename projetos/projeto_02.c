@@ -30,7 +30,7 @@ int main(){
     
     pi+=(primeiro_termo*funcao_02(i)*funcao_03(i))*6;//Cálculo de pi
     
-    aux=verificacao(pi, pi_aux, aux);    //Verificação de precisão
+    aux=verificacao(pi, pi_aux, aux);                //Verificação de precisão
     
     pi_aux=pi;
     i+=2;	
