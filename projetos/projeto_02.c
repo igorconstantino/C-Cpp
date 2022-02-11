@@ -32,9 +32,9 @@ int main(){
     
     aux=verificacao(pi, pi_aux, aux);                //Verificação de precisão
     
-    pi_aux=pi;
-    i+=2;	
-  }while(aux-1!=p);
+    pi_aux=pi;          //Pi anterior recebe o valor agora do atual pi(atualização do pi_aux)
+    i+=2;	              //Quantidade de parcelas aumenta em 2 para continuar ímpar
+  }while(aux-1!=p);     //Precisão desejada alcançada
 
   printf("\nValor de pi: %.20Lf", pi);
 
@@ -60,13 +60,13 @@ long double funcao_03(int n){
 
 //Verificação
 int verificacao(long double pi, long double pi_aux, int aux){
-  long int testepi;       //Auxiliares para para verificação da precisão de mais de uma casa com o mesmo cálculo
+  long int testepi;         //Auxiliares para para verificação da precisão de mais de uma casa com o mesmo cálculo
   long int testeaux;    
   
-  testepi= pi*pow(10, aux);
-  testeaux= pi_aux*pow(10, aux);
+  testepi= pi*pow(10, aux);      //Teste de pi atual(aux é o número de casas verificadas)
+  testeaux= pi_aux*pow(10, aux); //Teste de pi anterior(aux é o número de casas verificadas)
   if(testepi==testeaux)
-    aux++;
+    aux++;                       //Se forem iguais o aux aumenta 1 
 
   return(aux);   
 }//Verificação da precisão
