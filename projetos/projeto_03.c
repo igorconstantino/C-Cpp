@@ -131,7 +131,7 @@ void add_vet(int* V, int num){
   V[j]=num;       //adiciona o numero no vetor
   j++;            //soma 1 a j
   return;
-}//Fim da função add_test
+}//Fim da função add_vet
 
 
 
