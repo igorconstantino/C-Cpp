@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "lista.h"
 
+#define MAX 100
+#define TRUE 1
+#define FALSE 0
+#define boolean int
+
 //Lista sequencial----------------
 boolean Vazia(lista *L){
 	return (L->nelem == 0);		

@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
                 Inserir_posic(novo_elem, minhaLista);
                 break;
             case 6:
-                Buscar(chave, minhaLista, posic);
+                Buscar(chave, minhaLista, &posic);
                 break;
             case 7:
                 Remover_posic(posic, minhaLista);
@@ -68,10 +68,10 @@ int main(int argc, char *argv[]) {
                 Inserir_ord(novo_elem, minhaLista);
                 break;
             case 12:
-                Buscar_ord(chave, minhaLista, posic);
+                Buscar_ord(chave, minhaLista, &posic);
                 break;
             case 13:
-                Busca_bin(chave, minhaLista, posic);
+                Busca_bin(chave, minhaLista, &posic);
                 break;
             case 14:
                 Remover_ch(chave, minhaLista);
