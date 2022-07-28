@@ -29,7 +29,7 @@ boolean Inserir_posic(tipo_elem x, int p, lista *L){
 	int q;
 	
 	if(Cheia(L) || p > L->nelem+1 || p < 1){
-		return FAlSE;
+		return FALSE;
 	}else{
 		for(q = L->nelem; q >= p; q--)
 			L->A[q + 1] = L->A[q];
